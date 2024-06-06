@@ -55,8 +55,8 @@ export const Banner = () => {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7} className="wow fadeIn" dataWowDuration="1.5s">
             <span className="tagline">Welcome to my Portfolio</span>
-            <h1>{`Hi! I'm Mark`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-              <p>Good day. My name is Mark and I do Webapp design and development. I am fluent in Java, React, and Webflow.</p>
+            <h1>{`Good day! I'm Mark`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+              <p>I do WebApp design and development. I am fluent in Java, React, and Webflow.</p>
               <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
           </Col>
           <Col xs={12} md={6} xl={5} className="wow zoomIn" dataWowDuration="1.5s">
