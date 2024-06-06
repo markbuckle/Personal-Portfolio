@@ -3,7 +3,7 @@ const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
 
-// server used to send send emails
+// server used to send emails
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -15,11 +15,14 @@ console.log(process.env.EMAIL_PASS);
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "********@gmail.com",
+    user: "markbuckle92@gmail.com",
+    // No point in entering your password below as two-factor authentication wont allow for it to verify
+    // You need to go to your gmail account security settings, create an application account password, then use it below 
     pass: ""
   },
 });
 
+// this verifys that it is running
 contactEmail.verify((error) => {
   if (error) {
     console.log(error);
@@ -35,7 +38,7 @@ router.post("/contact", (req, res) => {
   const phone = req.body.phone;
   const mail = {
     from: name,
-    to: "********@gmail.com",
+    to: "markbuckle92@gmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>

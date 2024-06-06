@@ -15,7 +15,7 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
 //   Indicates how much time passes between one extra ledger being typed out
-  const period = 2000;
+  const period = 1500;
 
 //   A function that takes care of typing or deleting
   useEffect(() => {
