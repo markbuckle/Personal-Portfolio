@@ -8,6 +8,10 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+// import { HashLink } from 'react-router-hash-link';
+import {
+  BrowserRouter as Router
+} from "react-router-dom";
 
 // use a function export component
 export const NavBar = () => {
@@ -36,10 +40,11 @@ export const NavBar = () => {
     }
 
     return (
-        // copy and paste below from bootstrap library: https://react-bootstrap.netlify.app/docs/components/navbar/
+      <Router>
+        {/* // copy and paste below from bootstrap library: https://react-bootstrap.netlify.app/docs/components/navbar/ */}
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-      <Container>
-        <Navbar.Brand href="/">
+          <Container>
+           <Navbar.Brand href="/">
           <img src={logo} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -59,8 +64,9 @@ export const NavBar = () => {
             </div>
             <button className="vvd" onClick={() => console.log('connect')}><span>Let’s Connect</span></button>
           </span>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </Router>
   )
 }
