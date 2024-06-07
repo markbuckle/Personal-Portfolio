@@ -57,11 +57,12 @@ export const NavBar = () => {
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
           </Nav>
           <span className="navbar-text">
+            {/* Commenting out social icons below as I don't plan on using them for now
             <div className="social-icon">
               <a href="#"><img src={navIcon1} alt="" /></a>
               <a href="#"><img src={navIcon2} alt="" /></a>
               <a href="#"><img src={navIcon3} alt="" /></a>
-            </div>
+            </div> */}
             <button className="vvd" onClick={() => console.log('connect')}><span>Let’s Connect</span></button>
           </span>
           </Navbar.Collapse>

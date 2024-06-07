@@ -11,11 +11,11 @@ export const Banner = () => {
 //   Component needs to show the current text. Only indicates the portion of the word being displayed
   const [text, setText] = useState('');
 //   A state to determine how fast one letter comes after the first one is typed
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(100 - Math.random() * 50);
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
 //   Indicates how much time passes between one extra ledger being typed out
-  const period = 1500;
+  const period = 500;
 
 //   A function that takes care of typing or deleting
   useEffect(() => {
@@ -57,7 +57,8 @@ export const Banner = () => {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7} className="wow fadeIn" dataWowDuration="1.5s">
             <span className="tagline">Welcome to my Portfolio</span>
-            <h1>{`Good day! I'm Mark`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+            <h1>{`Good day! I'm Mark`}</h1>
+              <h1><span className="txt-rotate" dataPeriod="200" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
               <p>I do WebApp design and development. I am fluent in Java, React, and Webflow.</p>
               <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
           </Col>
