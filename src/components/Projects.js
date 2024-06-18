@@ -36,7 +36,7 @@ export const Projects = () => {
   return (
     <section class="project" id="projects">
       <Container>
-        <Row>
+        <Row class="row" id="row">
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
