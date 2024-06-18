@@ -9,17 +9,23 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const projects1 = [
     {
       title: "LabGevity",
       description: "Personalized Health Tracker",
       imgUrl: projImg1,
-    },
+    }
+  ];
+
+  const projects2 = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "StockIT",
+      description: "Stock Price Tracker",
       imgUrl: projImg2,
     },
+  ];
+
+  const projects3 = [
     {
       title: "Business Startup",
       description: "Design & Development",
@@ -28,7 +34,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="projects">
+    <section class="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
@@ -50,13 +56,13 @@ export const Projects = () => {
                       <Nav.Link eventKey="third">Project 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                  <Tab.Content className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                     <p>LabGevity is an interactive dashboard that allows the user to make sense of their health data.</p>
                       <Row>
                         {
                           // For each project and index, return project title before we create the card
-                          projects.map((project, index) => {
+                          projects1.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -68,11 +74,11 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>This Android mobile app allows you to view a list of stocks of your choice. It was built using React Native and utilized Expo, Stepzen and GraphQL to bring in stock information from Twelvedata. The details of each stock is adjustable and you can track price variations over time. </p>
                       <Row>
                         {
                           // For each project and index, return project title before we create the card
-                          projects.map((project, index) => {
+                          projects2.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -88,7 +94,7 @@ export const Projects = () => {
                       <Row>
                         {
                           // For each project and index, return project title before we create the card
-                          projects.map((project, index) => {
+                          projects3.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
