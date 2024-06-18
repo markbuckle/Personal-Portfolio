@@ -1,4 +1,4 @@
-# Portfolio-2
+Personal Portfolio
 
 This project was bootstrapped with Create React App to make an advanced portfolio with animations
 
