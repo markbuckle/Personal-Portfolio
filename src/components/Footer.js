@@ -16,7 +16,7 @@ export const Footer = () => {
             <img src={logo} alt="Logo" />
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
-            {/* Commenting out social icons and copyright content as I dont plan on using them for now */}
+            {/* Commenting out social icons and copyright content as I don't plan on using them for now */}
             <div className="social-icon">
               {/* <a href="#"><img src={navIcon1} alt="Icon" /></a>
               <a href="#"><img src={navIcon2} alt="Icon" /></a>

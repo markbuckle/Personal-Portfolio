@@ -19,16 +19,16 @@ export const Projects = () => {
 
   const projects2 = [
     {
-      title: "StockIT",
-      description: "Stock Price Tracker",
+      title: "Ai Chat Bot",
+      description: "AI chat bot using Retrieval-Augmented Generation (RAG)",
       imgUrl: projImg2,
     },
   ];
 
   const projects3 = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "StockIT",
+      description: "Stock Price Tracker",
       imgUrl: projImg3,
     },
   ];
@@ -74,7 +74,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>This Android mobile app allows you to view a list of stocks of your choice. It was built using React Native and utilized Expo, Stepzen and GraphQL to bring in stock information from Twelvedata. The details of each stock is adjustable and you can track price variations over time. </p>
+                      <p>AI chat bot using Retrieval-Augmented Generation (RAG). Large Language Models (LLMs) are great at generating text but they lack information about the users projects as most AI databases are not open-sourced. RAGs = LLM + project specific knowledge database. RAGs allow for more specific and accurate responses from the AI chat bot. </p>
                       <Row>
                         {
                           // For each project and index, return project title before we create the card
@@ -90,7 +90,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>This Android mobile app allows you to view a list of stocks of your choice. It was built using React Native and utilized Expo, Stepzen and GraphQL to bring in stock information from Twelvedata. The details of each stock is adjustable and you can track price variations over time.</p>
                       <Row>
                         {
                           // For each project and index, return project title before we create the card
