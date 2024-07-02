@@ -11,3 +11,5 @@ Front-end library: **React**
 CSS framework: **React-bootstrap**
 
 CSS animations library: **Animate.css**
+
+*To be hosted soon*
